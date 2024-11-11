@@ -1,3 +1,4 @@
+/* Container styling */
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -44,4 +45,29 @@ button:hover {
 #status {
     margin-top: 10px;
     font-weight: bold;
+}
+
+/* Progress bar styling */
+.hidden {
+    display: none;
+}
+
+#fetchLocationBtnContainer {
+    position: relative;
+    display: inline-block;
+}
+
+.spinner {
+    width: 24px;
+    height: 24px;
+    border: 3px solid #4CAF50;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

@@ -18,8 +18,14 @@
         <select id="villageSelect">
             <option value="">Select Village</option>
         </select>
-        
-        <button id="fetchLocationBtn">Fetch Location</button>
+
+        <div id="fetchLocationBtnContainer">
+            <button id="fetchLocationBtn">Fetch Location</button>
+            <div id="progressBar" class="hidden">
+                <div class="spinner"></div>
+            </div>
+        </div>
+
         <p id="status"></p>
     </div>
 
